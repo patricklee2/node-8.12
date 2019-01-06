@@ -18,7 +18,7 @@ RUN npm install -g pm2 \
      && apk add curl \
      && apk add wget \
      && apk add tcptraceroute \
-     && apk add bash \
+     && apk add bash
 
 
 # https://github.com/dockage/alpine/blob/master/3.8/openrc/Dockerfile
