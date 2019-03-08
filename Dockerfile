@@ -44,6 +44,7 @@ RUN sed -i 's/^\(tty\d\:\:\)/#\1/g' /etc/inittab \
 # setup default site
 RUN rm -f /etc/ssh/sshd_config
 COPY sshd_config /etc/ssh/
+COPY startup /opt/startup
 COPY hostingstart.html /opt/startup
 
 # configure startup
